@@ -1,25 +1,25 @@
 package cs.vsu.sokolov.Logic;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
 
-public class ListHandler<E> {
-    private final List<E> list;
+public class ListHandler {
 
-    public ListHandler (List<E> list) {
-        this.list = list;
-    }
+    public static <E> List<E> inList1NotInList2(List<E> list1, List<E> list2) {
+        List<E> firstList = new ArrayList<>(list1);
+        List<E> secondList = new ArrayList<>(list2);
+        List<E> resultList = new ArrayList<>();
 
-    public static <T> List<T> inList1NotInList2(List<T> list1, List<T> list2) {
-        TreeSet<T> firstTree = new TreeSet<>(list1);
-        TreeSet<T> secondTree = new TreeSet<>(list2);
-
-        for (T tree : firstTree) {
-            if (secondTree.contains(tree))
+        for (E elem : firstList) {
+            if (indexOf(secondList, elem) != -1) {
+                resultList.add(elem);
+            }
         }
+
+        return resultList;
     }
 
-    public int indexOf (List<E> list, E value) {
+    public static <T> int indexOf (List<T> list, T value) {
         int searchFailed = -1;
         int listLength = list.size();
 
