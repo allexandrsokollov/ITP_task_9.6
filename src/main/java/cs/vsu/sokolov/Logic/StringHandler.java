@@ -16,4 +16,15 @@ public class StringHandler {
         return result;
     }
 
+    public static String IntListToString(List<Integer> list) {
+        StringBuilder result = new StringBuilder();
+
+        for (Integer i : list) {
+            result.append(i);
+            result.append(" ");
+        }
+
+        return result.toString();
+    }
+
 }
