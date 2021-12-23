@@ -6,21 +6,6 @@ import java.io.IOException;
 
 public class FileWriter {
 
-    public static void writeStringToFile (String fileName, String str) throws IOException {
-
-        if (!fileName.endsWith(".txt")) {
-            fileName = fileName + ".txt";
-        }
-
-
-        File file = new File("src/main/resources/filesToTestFileWriter/" + fileName);
-        FileOutputStream fos = new FileOutputStream(file.getAbsolutePath());
-
-        byte[] buffer = str.getBytes();
-        fos.write(buffer, 0, buffer.length);
-        fos.close();
-    }
-
     public static void writeStringToFile (String fileName, String filePath, String str) throws IOException {
 
         if (!fileName.endsWith(".txt")) {
@@ -28,11 +13,16 @@ public class FileWriter {
         }
 
 
-        if (!filePath.endsWith("/")) {
-            filePath = filePath + "/";
-        }
-
         File file = new File(filePath + fileName);
+        FileOutputStream fos = new FileOutputStream(file.getAbsolutePath());
+
+        byte[] buffer = str.getBytes();
+        fos.write(buffer, 0, buffer.length);
+        fos.close();
+    }
+
+    public static void writeStringToFile (File file, String str) throws IOException {
+
         FileOutputStream fos = new FileOutputStream(file.getAbsolutePath());
 
 

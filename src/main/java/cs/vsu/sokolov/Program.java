@@ -36,7 +36,7 @@ public class Program {
             List<Integer> result;
             result = ListHandler.inList1NotInList2(list1, list2);
 
-            FileWriter.writeStringToFile("out.txt", "src/main/resources/lists", result.toString());
+            FileWriter.writeStringToFile("out.txt", params.outputFile, result.toString());
 
         } catch (IOException e) {
             System.out.println("Error with FileReader");
