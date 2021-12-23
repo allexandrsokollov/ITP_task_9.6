@@ -11,7 +11,7 @@ public class ListHandler {
         List<E> resultList = new ArrayList<>();
 
         for (E elem : firstList) {
-            if (indexOf(secondList, elem) != -1) {
+            if (indexOf(secondList, elem) == -1) {
                 resultList.add(elem);
             }
         }

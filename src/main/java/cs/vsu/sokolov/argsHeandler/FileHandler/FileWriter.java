@@ -19,8 +19,6 @@ public class FileWriter {
         byte[] buffer = str.getBytes();
         fos.write(buffer, 0, buffer.length);
         fos.close();
-
-        System.out.println("The file has been written");
     }
 
     public static void writeStringToFile (String fileName, String filePath, String str) throws IOException {
@@ -37,10 +35,10 @@ public class FileWriter {
         File file = new File(filePath + fileName);
         FileOutputStream fos = new FileOutputStream(file.getAbsolutePath());
 
+
         byte[] buffer = str.getBytes();
         fos.write(buffer, 0, buffer.length);
         fos.close();
 
-        System.out.println("The file has been written");
     }
 }
