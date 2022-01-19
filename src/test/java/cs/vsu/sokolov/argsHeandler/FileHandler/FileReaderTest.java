@@ -1,5 +1,6 @@
 package cs.vsu.sokolov.argsHeandler.FileHandler;
 
+import cs.vsu.sokolov.FileHandler.FileReader;
 import org.junit.Assert;
 
 import java.io.IOException;

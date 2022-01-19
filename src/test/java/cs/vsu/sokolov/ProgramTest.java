@@ -1,12 +1,10 @@
 package cs.vsu.sokolov;
 
-import cs.vsu.sokolov.argsHeandler.FileHandler.FileReader;
+import cs.vsu.sokolov.FileHandler.FileReader;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 public class ProgramTest {
 

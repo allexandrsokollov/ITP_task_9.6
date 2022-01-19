@@ -1,4 +1,4 @@
-package cs.vsu.sokolov.argsHeandler.FileHandler;
+package cs.vsu.sokolov.FileHandler;
 
 import java.io.File;
 import java.io.FileOutputStream;

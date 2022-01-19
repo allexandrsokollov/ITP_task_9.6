@@ -1,4 +1,4 @@
-package cs.vsu.sokolov.argsHeandler.FileHandler;
+package cs.vsu.sokolov.FileHandler;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -19,10 +19,10 @@ public class FileReader {
 
         fin.close();
 
-        return getStrBuildrViaStrArr(tempStr);
+        return getStringArrFromStrBuilder(tempStr);
     }
 
-    private static String[] getStrBuildrViaStrArr (StringBuilder stringBuilder) {
+    private static String[] getStringArrFromStrBuilder(StringBuilder stringBuilder) {
         Scanner scanner = new Scanner(String.valueOf(stringBuilder));
         List<String> temp = new ArrayList<>();
 

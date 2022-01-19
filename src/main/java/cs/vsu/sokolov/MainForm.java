@@ -5,8 +5,8 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import cs.vsu.sokolov.Logic.ListHandler;
 import cs.vsu.sokolov.Logic.StringHandler;
-import cs.vsu.sokolov.argsHeandler.FileHandler.FileReader;
-import cs.vsu.sokolov.argsHeandler.FileHandler.FileWriter;
+import cs.vsu.sokolov.FileHandler.FileReader;
+import cs.vsu.sokolov.FileHandler.FileWriter;
 import cs.vsu.sokolov.util.JTableUtils;
 import cs.vsu.sokolov.util.SwingUtils;
 
